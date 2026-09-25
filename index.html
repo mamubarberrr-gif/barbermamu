@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Mamut Barber. Cortes de pelo a 5 €. Reserva tu cita por WhatsApp.">
+  <title>Mamut Barber | Cortes a 5 €</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Mamut Barber, inicio">
+      <img src="logo.png" alt="Logotipo de Mamut Barber">
+      <span>MAMUT <b>BARBER</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#reservar">Reservar</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="header-cta" href="#reservar">Reserva tu cita <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> BARBERÍA · ESTILO URBANO</p>
+        <h1>Tu estilo.<br><em>Tu momento.</em></h1>
+        <p class="hero-description">Un buen corte no tiene que costar una fortuna. Ven a Mamut Barber y sal con tu mejor versión.</p>
+        <div class="hero-price"><strong>5<span>€</span></strong><div><b>CORTE DE PELO</b><small>Precio claro. Estilo impecable.</small></div></div>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#reservar">Reservar cita <span>→</span></a>
+          <a class="text-link" href="#servicios">Ver servicios <span>↓</span></a>
+        </div>
+        <div class="hero-note"><span class="status-dot"></span> Citas por la tarde · Lunes a sábado</div>
+      </div>
+      <div class="hero-art" aria-label="Logotipo de Mamut Barber">
+        <div class="logo-frame"><img src="logo.png" alt="Mamut Barber"></div>
+        <div class="round-stamp">FRESH<br><b>LOOK</b><span>✦</span></div>
+      </div>
+      <div class="hero-bottom"><span>PRECISIÓN</span><i></i><span>ESTILO</span><i></i><span>ACTITUD</span></div>
+    </section>
+
+    <section class="info-strip" aria-label="Información rápida">
+      <div><span class="strip-icon">✂</span><p><b>Corte de pelo</b><small>Solo 5 €</small></p></div>
+      <div><span class="strip-icon">◷</span><p><b>Horario de tarde</b><small>16:00 — 20:00</small></p></div>
+      <div><span class="strip-icon">↗</span><p><b>Reserva sencilla</b><small>Directamente por WhatsApp</small></p></div>
+    </section>
+
+    <section class="section services" id="servicios">
+      <div class="section-heading">
+        <p class="eyebrow">LO QUE HACEMOS</p>
+        <h2>Un corte que <em>habla por ti.</em></h2>
+        <p>Un servicio sencillo, un resultado con personalidad.</p>
+      </div>
+      <article class="service-card">
+        <div class="service-number">01 / SERVICIO</div>
+        <div class="service-symbol">✂</div>
+        <div class="service-info"><h3>Corte de pelo</h3><p>Un corte limpio y adaptado a tu estilo. Reserva tu hora y ven a renovar tu look.</p><span class="service-time">30 MIN · CON CITA</span></div>
+        <div class="service-price">5<sup>€</sup></div>
+      </article>
+      <p class="service-footnote">¿Quieres consultar otro servicio? Escríbenos por WhatsApp.</p>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <div class="section-heading">
+        <p class="eyebrow">INSPIRACIÓN</p>
+        <h2>El estilo está <em>en los detalles.</em></h2>
+        <p>Una muestra de estilos para inspirar tu próximo corte.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-tile tile-one"><span>01</span><div><b>FADE</b><small>Degradado limpio</small></div></div>
+        <div class="gallery-tile tile-two"><span>02</span><div><b>TEXTURA</b><small>Volumen y movimiento</small></div></div>
+        <div class="gallery-tile tile-three"><span>03</span><div><b>CLÁSICO</b><small>Siempre actual</small></div></div>
+      </div>
+      <p class="gallery-note">Puedes sustituir estos diseños por fotografías reales de tus cortes cuando quieras.</p>
+    </section>
+
+    <section class="booking-section" id="reservar">
+      <div class="booking-intro">
+        <p class="eyebrow">RESERVA ONLINE</p>
+        <h2>Tu próxima cita<br><em>empieza aquí.</em></h2>
+        <p>Elige el día y la hora que prefieras. Al continuar, se abrirá WhatsApp con tu solicitud preparada para enviarla.</p>
+        <div class="booking-callout"><span>✦</span><p><b>Sin pagos online</b><small>El corte se paga en la barbería. La cita queda pendiente de confirmación.</small></p></div>
+      </div>
+      <div class="booking-card">
+        <div class="booking-card-head"><div><span class="step-label">RESERVA TU CORTE</span><h3>Elige tu cita</h3></div><span class="price-pill">5 € / corte</span></div>
+        <form id="bookingForm">
+          <label for="customerName">Tu nombre</label>
+          <input id="customerName" name="name" type="text" placeholder="¿Cómo te llamas?" autocomplete="name" required maxlength="80">
+          <label for="customerPhone">Tu teléfono <span>(opcional)</span></label>
+          <input id="customerPhone" name="phone" type="tel" placeholder="Tu número de contacto" autocomplete="tel">
+          <label for="bookingDate">Selecciona el día</label>
+          <input id="bookingDate" name="date" type="date" required>
+          <label>Selecciona una hora</label>
+          <div class="time-slots" id="timeSlots" aria-live="polite">
+            <p class="slot-hint">Primero selecciona una fecha para ver los horarios.</p>
+          </div>
+          <input type="hidden" id="selectedTime" name="time" required>
+          <div class="booking-summary"><span>Precio del corte</span><strong>5,00 €</strong></div>
+          <button class="btn btn-gold btn-submit" type="submit">Continuar por WhatsApp <span>↗</span></button>
+          <p class="form-disclaimer">Al pulsar, se abrirá WhatsApp con los datos de tu solicitud. La hora no queda confirmada hasta que la barbería te responda.</p>
+          <p class="form-error" id="formError" role="alert"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section schedule">
+      <div class="section-heading">
+        <p class="eyebrow">CUÁNDO VENIR</p>
+        <h2>Nos vemos <em>por la tarde.</em></h2>
+      </div>
+      <div class="schedule-box">
+        <div class="schedule-days"><span>LUN — SÁB</span><strong>16:00 <i>—</i> 20:00</strong><small>Última cita: 19:30</small></div>
+        <div class="schedule-closed"><span>DOMINGO</span><strong>Cerrado</strong><small>Nos vemos el lunes.</small></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div><p class="eyebrow">¿HABLAMOS?</p><h2>¿Listo para tu<br><em>nuevo look?</em></h2><p>Escríbenos y resolveremos tus dudas.</p></div>
+      <a class="btn btn-light" href="https://wa.me/34634368378?text=Hola%2C%20Mamut%20Barber.%20Quiero%20informaci%C3%B3n." target="_blank" rel="noopener">Contactar por WhatsApp <span>↗</span></a>
+    </section>
+
+    <section class="section faq">
+      <div class="section-heading"><p class="eyebrow">PREGUNTAS FRECUENTES</p><h2>Lo que necesitas <em>saber.</em></h2></div>
+      <details><summary>¿Cuánto cuesta el corte de pelo? <span>+</span></summary><p>El corte de pelo cuesta 5 €.</p></details>
+      <details><summary>¿Cuál es el horario? <span>+</span></summary><p>De lunes a sábado, de 16:00 a 20:00. La última cita disponible es a las 19:30. Los domingos estamos cerrados.</p></details>
+      <details><summary>¿La cita queda confirmada al enviar WhatsApp? <span>+</span></summary><p>No. Al enviar la solicitud, la barbería debe confirmar que la hora está disponible.</p></details>
+      <details><summary>¿Puedo cambiar o cancelar mi cita? <span>+</span></summary><p>Sí. Escríbenos por WhatsApp indicando tu nombre y la fecha de la cita para solicitar un cambio o cancelación.</p></details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#inicio"><img src="logo.png" alt=""><span>MAMUT <b>BARBER</b></span></a>
+    <p>Tu estilo. Tu momento. · Cortes a 5 €</p>
+    <a href="https://wa.me/34634368378" target="_blank" rel="noopener">WhatsApp ↗</a>
+    <small>© <span id="year"></span> Mamut Barber. Todos los derechos reservados.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
